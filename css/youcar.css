@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+#wrapper {
+  display: table; /*float:left기능*/
+  table-layout: fixed;
+  width: 600%;
+  height: 100vh;
+}
+.box {
+  display: table-cell;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.box1 {
+  background-color: #ee4242;
+}
+
+
+/* side */
+#side {
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  float: left;
+  width: 13%;
+  height: 100vh;
+  box-shadow: 0.111em 0 0.556em #bab8b8;
+}
+#side h1 {
+  text-align: center;
+  padding: 3em 0;
+  margin-bottom: 3em;
+}
+#side nav {
+  text-align: center;
+}
+  .gnb li {
+    position: relative;
+  }
+  .gnb li a {
+    display: block;
+    height: 2.222em;
+    line-height: 2.222em;
+  }
+  .gnb > li > a {
+    font-weight: bold;
+    font-size: 1.35em;
+    padding: 0.655em 0;
+    font-family: 'yg-jalnan';
+  }
+  .gnb > li > a:hover {
+    color: #ee2e2c;
+  }
+  .lnb {
+    position: absolute;
+    top: 1em;
+    right: -11.111em;
+    background-color: rgba(255, 255, 255,0.7);
+    display: none;
+    z-index: 10;
+  }
+  .lnb li a {
+    display: block;
+    width: 11.111em;
+    height: 2.6em;
+    line-height: 2.6em;
+  }
+  .lnb li a:hover {
+    color: rgba(238, 46, 44, 0.7);
+  }
+  #side > a {
+    display: inline-block;
+    margin-top: 7em;
+    margin-left: 1.3em;
+    /* background-color: #abc; */
+    padding: 0.556em 0.833em;
+    border: 1px solid transparent;
+  }
+  #side > a:hover {
+    border: 1px solid rgb(102, 102, 102);
+  }
+
+/* cont1 */
+#cont1 {
+  position: relative;
+  background-image: url('../images/cont1_bg.png');
+  background-repeat: no-repeat;
+  background-position: 57em bottom;
+  height: 100vh;
+  background-size: 29% auto;
+  width: 87%;
+  float: right;
+}
+#cont1 h2 {
+  letter-spacing: 0.1em;
+  font-size: 3em;
+  color: #fff;
+  padding-top: 2.8em;
+  padding-bottom: 0.3em;
+  padding-left: 2.6em;
+}
+#cont1 > span {
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 2.7em;
+  padding-left: 3em;
+  padding-right: 0.3em;
+  color: #fff;
+}
+
+#cont1 .bar {
+  width: 3.8em;
+  height: 0.45em;
+  margin: 4em 8em;
+  background-color: #fff;
+}
+#cont1 .txt p {
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 5.67em;
+}
+
+.down {
+  border: 0.188em solid #fff;
+  width: 20em;
+  height: 6.5em;
+  color: #fff;
+  transition: all 1s;
+}
+.down .down_left {
+  font-size: 3.5em;
+  text-align: center;
+  height: 100%;
+  line-height: 1.6em;
+  float: left;
+  width: 35%;
+}
+.down .down_right {
+  float: right;
+  text-align: left;
+  width: 65%;
+  margin-top: 0.4em;
+  line-height: 2.5em;
+}
+.down .down_right  span {
+  font-size: 1.3em;
+}
+.down .down_right p {
+  font-size: 2em;
+  font-weight: bold;
+}
+.down1 { float: left; margin-right: 3em;}
+.down2 { float: left;}
+.down_box {
+  margin-top: 9em;
+  margin-left: 8em;
+}
+.down:hover{
+  color: #333;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255,0.9);
+}
+
+/* box2 */
+.box2 {
+  background-color: #ffd249;
+}
+.sharing {
+  height: 100%;
+  text-align: right;
+  margin-right: 5em;
+  width: 93%;
+  background-image: url('../images/p2_bg.png');
+  background-repeat: no-repeat;
+  background-position: 20em 22em;
+  background-size: 40%;
+  padding-top: 10em;
+}
+.sharing > h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-family: 'yg-jalnan';
+}
+
+.sharing h2.th{
+  margin-bottom: 1em;
+}
+.sharing p {
+  font-size: 1.7em;
+  line-height: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.sharing .click {
+  display: inline-block;
+  font-size: 1.911em;
+  margin-top: 6em;
+  background-color: #ee4242;
+}
+.sharing .click a {
+  padding: 1em 2em;
+  color: #fff;
+  display: block;
+  transition: all 0.5s;
+}
+.sharing .click a:hover {
+  background-color: #f95757;
+}
+
+/* box3 */
+.box3 {
+  background-color: #0a83ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

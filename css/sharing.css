@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+/* side */
+#side {
+  position: fixed;
+  float: left;
+  width: 13%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0.111em 0 0.556em #bab8b8;
+  z-index: 2;
+}
+#side h1 {
+  padding: 3em 0;
+  margin-bottom: 3em;
+  text-align: center;
+}
+#side nav {
+  text-align: center;
+}
+  .gnb li {
+    position: relative;
+  }
+  .gnb li a {
+    display: block;
+    height: 2.222em;
+    line-height: 2.222em;
+  }
+  .gnb > li > a {
+    font-family: 'yg-jalnan';
+    padding: 0.655em 0;
+    font-weight: bold;
+    font-size: 1.35em;
+  }
+  .gnb > li > a:hover {
+    color: #ee2e2c;
+  }
+  .lnb {
+    position: absolute;
+    display: none;
+    top: 1em;
+    right: -11.111em;
+    background-color: rgba(255, 255, 255,0.7);
+    z-index: 10;
+  }
+  .lnb li a {
+    display: block;
+    width: 11.111em;
+    height: 2.6em;
+    line-height: 2.6em;
+  }
+  .lnb li a:hover {
+    color: rgba(238, 46, 44, 0.7);
+  }
+#side > a {
+    display: inline-block;
+    padding: 0.556em 0.833em;
+    margin-top: 7em;
+    margin-left: 1.3em;
+    font-weight: bold;
+    border: 0.056em solid transparent;
+  }
+#side > a:hover {
+    border: 0.056em solid rgb(102, 102, 102);
+  }
+
+.box_wrap {
+  padding-top: 5.556em;
+  text-align: center;
+}
+
+.box_wrap h2 {
+  font-family: 'yg-jalnan';
+  margin-left: 2em;
+  margin-bottom: 2em;
+  font-size: 2.2em;
+}
+.box_wrap > .content {
+  display: inline-block;
+  margin-right: 3em;
+  font-size: 1.166em;
+}
+.content p {
+  margin-bottom: 1.5em;
+}
+.content > input , .content > select {
+  padding: 0.7em 0.8em;
+  border: 0.2em solid #333;
+  cursor: pointer;
+}
+.cont1 {
+  margin-left: 12em;
+}
+.btn {
+  padding: 1.2em 2.2em;
+  margin-left: -1em;
+  margin-top: 3em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ee2e2c;
+}
+
+
+.map {
+  margin-top: 4.6em;
+}
+#map_view {
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  */
